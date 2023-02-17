@@ -1,0 +1,11 @@
+{
+  "name": "ami-helper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@binance/connector": "^2.0.0",
+    "dayjs": "^1.11.7",
+    "jsonfile": "^6.1.0"
+  }
+}

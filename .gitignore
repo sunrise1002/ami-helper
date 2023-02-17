@@ -38,5 +38,4 @@ lerna-debug.log*
 .env
 
 output-specs
-*.json
 *.txt
