@@ -1,0 +1,3 @@
+const NUMBER_CANDLESTICK = 1000
+
+module.exports = { NUMBER_CANDLESTICK }
