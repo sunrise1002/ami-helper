@@ -83,10 +83,9 @@ const getKlinesforSingleSymbol = async (
       `${symbol}.txt`
     )
 
-    if (fs.existsSync(filePathTxt)) return console.log(`Please delete file: ${filePathTxt}`)
+    if (fs.existsSync(filePathTxt)) fs.unlinkSync(filePathTxt)
 
     const fetchedData = jsonfile.readFileSync(filePathJson)
-    console.log(fetchedData)
     fetchedData.data.forEach(klineData => {
       const record = `${symbol},` + 
         `${dayjs(+klineData[0]).format(['1d', '1w'].includes(interval) ? 'YYYYMMDD' : 'YYYYMMDD,HH:mm:ss')},` +
