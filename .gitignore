@@ -39,3 +39,7 @@ lerna-debug.log*
 
 output-specs
 *.txt
+results/1d/*
+results/1h/*
+results/1w/*
+results/15m/*
