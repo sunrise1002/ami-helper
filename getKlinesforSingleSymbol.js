@@ -57,7 +57,7 @@ const getOldKlineData = async (
  * @param {String} interval  15m, 1h, 1d, 1w, ...
  * @param {Number} limit     0 - 1000
  */
-const getKlinesforSingleSymbol = async (
+const getKlinesForSingleSymbol = async (
   symbol = 'BTCUSDT',
   interval = '1d',
   limit = 1000
@@ -101,4 +101,4 @@ const getKlinesforSingleSymbol = async (
   console.log('DONE!')
 }
 
-getKlinesforSingleSymbol('BTCUSDT', '1d', 1000)
+getKlinesForSingleSymbol('BTCUSDT', '1d', 1000)
