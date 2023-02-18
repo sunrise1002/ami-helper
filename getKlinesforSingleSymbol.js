@@ -89,7 +89,7 @@ const getKlinesforSingleSymbol = async (
     console.log(fetchedData)
     fetchedData.data.forEach(klineData => {
       const record = `${symbol},` + 
-        `${dayjs(+klineData[0]).format(['1d', '1w'].includes(interval) ? 'YYYYMMDD' : 'YYYYMMDD,hh:mm:ss')},` +
+        `${dayjs(+klineData[0]).format(['1d', '1w'].includes(interval) ? 'YYYYMMDD' : 'YYYYMMDD,HH:mm:ss')},` +
         `${klineData[1]},` +
         `${klineData[2]},` +
         `${klineData[3]},` +
